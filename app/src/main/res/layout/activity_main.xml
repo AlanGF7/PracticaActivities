@@ -23,8 +23,6 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:text="FotoFlechita"
-            android:orientation="vertical"
-            android:gravity="center"
 
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toStartOf="@id/photoBinary"
