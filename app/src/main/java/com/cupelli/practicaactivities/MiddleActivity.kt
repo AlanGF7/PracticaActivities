@@ -26,7 +26,6 @@ class MiddleActivity : AppCompatActivity() {
         imageSelected = intent.getParcelableExtra("selectedImage") ?: Images()
         ID = intent.getIntExtra("ID_Selected",0)
         starredImage = imageSelected.isFavorite
-
         initView()
 
     }
@@ -40,6 +39,8 @@ class MiddleActivity : AppCompatActivity() {
         mainImage.setImageResource(imageSelected.image)
 
         textPhotoMiddle.setText(imageSelected.description.text)
+
+        detectFavorite()
 
     }
 
