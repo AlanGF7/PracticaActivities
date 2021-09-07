@@ -49,6 +49,7 @@ class MainActivity : AppCompatActivity() {
         btnInfo.setOnClickListener{
             startActivity(Intent(this, MiddleActivity::class.java).apply {
                 putExtra("selectedImage", imagesArray[centinel])
+                putExtra("ID_Selected", centinel)
             })
         }
 

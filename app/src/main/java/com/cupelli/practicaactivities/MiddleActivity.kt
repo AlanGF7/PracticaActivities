@@ -56,7 +56,6 @@ class MiddleActivity : AppCompatActivity() {
     }
 
     fun clickFavorite(view: View) {
-
         starredImage = !starredImage
         Images().isFavorite(ID, starredImage)
         detectFavorite()
