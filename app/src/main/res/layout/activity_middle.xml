@@ -23,6 +23,7 @@
             android:layout_width="300dp"
             android:layout_height="300dp"
             android:layout_margin="10dp"
+            android:onClick="clickPhoto"
             app:layout_constraintBottom_toTopOf="@id/textPhotoMiddle"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -43,18 +44,19 @@
             app:layout_constraintBottom_toTopOf="@id/photoPreferences"
             />
 
-        <ImageView
+        <ImageButton
             android:id="@+id/photoPreferences"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_margin="10dp"
+            android:onClick="clickFavorite"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@id/textPhotoMiddle"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_editor_absoluteX="20dp"
             app:layout_editor_absoluteY="20dp"
-            app:srcCompat="@drawable/logo" />
+            app:srcCompat="@drawable/starempty"/>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

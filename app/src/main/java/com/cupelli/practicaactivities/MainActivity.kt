@@ -1,5 +1,6 @@
 package com.cupelli.practicaactivities
 
+import android.content.Intent
 import android.media.Image
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -40,14 +41,16 @@ class MainActivity : AppCompatActivity() {
 
     private fun changeImagesByClick(){
         btnBack.setOnClickListener{
-            if(centinel == 0) {centinel = imagesArray.size - 1 }//En caso de que centinel sea 0, restaremos un valor al arreglo
-            else {centinel -= 1}
+            if(centinel == 0) { centinel = imagesArray.size - 1 }//En caso de que centinel sea 0, restaremos un valor al arreglo
+            else { centinel -= 1 }
             bringImages()
         }
 
-        /*btnInfo.setOnClickListener{
-            startActivity(Intent(this, ImageDesc))
-        }*/
+        btnInfo.setOnClickListener{
+            startActivity(Intent(this, MiddleActivity::class.java).apply {
+                putExtra("selectedImage", imagesArray[centinel])
+            })
+        }
 
         btnNext.setOnClickListener{
             if(centinel ==  imagesArray.size - 1) {centinel = 0} //En caso de que centinel sea 0, restaremos un valor al arreglo
