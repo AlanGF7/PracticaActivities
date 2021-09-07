@@ -41,7 +41,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_editor_absoluteX="20dp"
             app:layout_editor_absoluteY="20dp"
-            app:srcCompat="@drawable/logo" />
+            app:srcCompat="@drawable/purple1" />
 
         <Button
             android:id="@+id/btnNext"
@@ -58,6 +58,7 @@
             tools:layout_editor_absoluteY="300" />
 
         <Button
+            android:id="@+id/btnInfo"
             android:layout_width="100dp"
             android:layout_height="50dp"
             android:text="Información"
