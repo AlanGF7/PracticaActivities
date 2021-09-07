@@ -9,7 +9,7 @@ import android.widget.ImageView
 class MainActivity : AppCompatActivity() {
 
     private lateinit var Imagenes: Images
-    var centinel = 0
+    private var centinel = 0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -33,6 +33,9 @@ class MainActivity : AppCompatActivity() {
         btnInfo = findViewById(R.id.btnInfo)
         //Cargamos las imágenes en nuestro arreglo, llamando la función getImages en Images
         imagesArray = Imagenes.getImages()
+
+        bringImages()
+        changeImagesByClick()
     }
 
     private fun changeImagesByClick(){

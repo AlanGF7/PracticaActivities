@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">PracticaActivities</string>
     <string name="infoImage">Información de la imagen que será impresa</string>
+    <string name="Information">Info</string>
+    <string name="nextButton">Next</string>
+    <string name="backButton">Back</string>
 </resources>

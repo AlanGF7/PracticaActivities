@@ -20,7 +20,7 @@ class Images (
             Images(R.drawable.purple3, "Parecieran las puertas del infierno, tornadas moradas, ¿O era lila?",false),
             Images(R.drawable.ic_dog, "Es imposible olvidar a los pequeños acompañantes que tenemos en esta gran vida, ¿Cierto?",false),
             Images(R.drawable.purple4, "Purple purple and just purple. Isn't that combination so perfect?",false),
-            Images(R.drawable.ic_stock, "Trading. Es un mundo muy interesante, no estaría mal echarle un ojo más a menudo",false),
+            Images(R.drawable.ic_trading, "Trading. Es un mundo muy interesante, no estaría mal echarle un ojo más a menudo",false),
             Images(R.drawable.purple5, "¿Serán gotas moradas de agua en una hoja? No lo sabremos... Tiene aura misteriosa",false),
             Images(R.drawable.ic_violin, "To fiddle, to play the violin. Yep, I didn't know that verb too",false),
         )

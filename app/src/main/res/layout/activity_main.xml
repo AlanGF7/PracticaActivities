@@ -22,7 +22,7 @@
             android:id="@+id/btnBack"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:text="FotoFlechita"
+            android:background="@drawable/ic_left_arrow"
 
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toStartOf="@id/photoBinary"
@@ -47,9 +47,9 @@
             android:id="@+id/btnNext"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:text="FotoFlechita"
             android:orientation="vertical"
             android:gravity="center"
+            android:background="@drawable/ic_right_arrow"
 
             app:layout_constraintStart_toEndOf="@+id/photoBinary"
             app:layout_constraintEnd_toEndOf="parent"
@@ -61,7 +61,7 @@
             android:id="@+id/btnInfo"
             android:layout_width="100dp"
             android:layout_height="50dp"
-            android:text="Información"
+            android:text="@string/Information"
 
             app:layout_constraintStart_toStartOf="@id/photoBinary"
             app:layout_constraintEnd_toEndOf="@+id/photoBinary"
